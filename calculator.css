@@ -1,18 +1,33 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --primary: #38bdf8;
+  --danger: #ef4444;
+  --text: #ffffff;
+}
+
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f172a;
+  background: var(--bg);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
+  color: var(--text);
 }
 
-.calculator {
-  background: #1e293b;
+.app {
+  background: var(--card);
   padding: 20px;
-  border-radius: 12px;
-  width: 300px;
+  border-radius: 15px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+}
+
+h2 {
+  margin-bottom: 10px;
 }
 
 #display {
@@ -20,10 +35,10 @@ body {
   height: 60px;
   font-size: 26px;
   text-align: right;
-  margin-bottom: 10px;
-  padding: 10px;
+  margin-bottom: 15px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
+  padding: 10px;
   background: #0f172a;
   color: white;
 }
@@ -35,20 +50,21 @@ body {
 }
 
 button {
-  height: 60px;
+  height: 55px;
   font-size: 18px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  background: #38bdf8;
+  background: var(--primary);
   color: white;
+  transition: 0.2s;
 }
 
 button:hover {
-  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 .clear {
   grid-column: span 4;
-  background: #ef4444;
-}
+  background: var(--danger);
+  }
