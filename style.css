@@ -1,66 +1,69 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --primary: #38bdf8;
+  --text: #ffffff;
+  --muted: #cbd5e1;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: #0f172a;
-  color: white;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 
 header {
-  background: #1e293b;
-  padding: 40px 20px;
   text-align: center;
+  padding: 40px 20px;
+  background: #1e293b;
 }
 
 h1 {
   margin: 0;
-  font-size: 42px;
+  font-size: 40px;
 }
 
 p {
-  font-size: 16px;
-  color: #cbd5e1;
+  color: var(--muted);
 }
 
 section {
-  background: #1e293b;
+  max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  max-width: 800px;
+  background: var(--card);
   border-radius: 12px;
 }
 
 h2 {
-  border-bottom: 2px solid #38bdf8;
+  border-bottom: 2px solid var(--primary);
   padding-bottom: 5px;
-}
-
-ul {
-  padding-left: 20px;
 }
 
 .project-card {
   background: #0f172a;
-  padding: 15px;
   margin: 15px 0;
-  border-radius: 10px;
-  border: 1px solid #38bdf8;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid var(--primary);
 }
 
 .project-card h3 {
   margin: 0;
-  color: #38bdf8;
+  color: var(--primary);
 }
 
 .project-card p {
-  color: #cbd5e1;
+  color: var(--muted);
 }
 
 .project-card a {
   display: inline-block;
   margin-top: 10px;
-  color: white;
-  background: #38bdf8;
   padding: 8px 12px;
-  border-radius: 5px;
+  background: var(--primary);
+  color: white;
   text-decoration: none;
+  border-radius: 8px;
   }
