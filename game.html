@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Challenge Game - Ace Games Studio</title>
+
+  <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Click Challenge Game</h1>
+    <p>Click the button as many times as you can before time runs out!</p>
+
+    <div class="stats">
+      <div>Score: <span id="score">0</span></div>
+      <div>Time: <span id="time">10</span>s</div>
+    </div>
+
+    <button id="clickBtn" onclick="increaseScore()">CLICK ME</button>
+
+    <button class="restart" onclick="startGame()">Restart Game</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
